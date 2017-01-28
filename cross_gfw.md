@@ -11,4 +11,6 @@
 需要的软硬件条件：  
 * 架设在国外的服务器，可以是购买的ss服务，或者在自己的vps、docker镜像等服务上架设ss服务。  
   具体如何架设ss服务器，或者docker ss服务容器，之后有时间再写。
-* 下载本地ss客户端。这里采用了shadowsocks，可以在网上搜索，或者在本工程文件中下载。
+* 下载本地ss客户端。这里采用了shadowsocks，可以在网上搜索，  
+  或者在本工程文件中下载[shadowsocks](https://raw.githubusercontent.com/zhukangfeng/command-help/master/Shadowsocks.exe)。
+  
