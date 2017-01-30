@@ -1,4 +1,4 @@
-# command-help
+# Instraction
 some usefull and helpfull command for software developers.
 
 # Content Instraction
@@ -13,6 +13,6 @@ Sublime is an free and friendly software for coding developers.
 3. [DOCKER HELP](https://github.com/zhukangfeng/command-help/blob/master/docker.md)  
 Some useful command of managing docker.
 
-# connect me
+# Connect me
 you can write issues on this project  
 or connect me in my personal blog *[zhuk.tk](https://zhuk.tk)*
