@@ -37,3 +37,5 @@ Windows下同时按ctrl+shift+p 然后点击install package
   方便进行git管理
 * DocBlockr
   用于自动建立代码文档。
+* indent XML
+  用于格式化显示json，xml文件
