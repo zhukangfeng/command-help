@@ -11,3 +11,6 @@
 
 ## 变量、函数等符号定义 Ctags
 安装指南: ubuntu: sudo apt-get install ctags
+
+## Vim中树形文件查看 NERDTree
+安装指南: [NERDTree](https://github.com/scrooloose/nerdtree)
