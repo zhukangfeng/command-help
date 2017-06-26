@@ -36,3 +36,9 @@ docker run --name zabbix-web-apache-mysql -e DB_SERVER_HOST="172.17.0.1" -e MYSQ
 ```
 docker run --name zabbix-web-nginx-mysql -e DB_SERVER_HOST="172.17.0.1" -e MYSQL_USER="zabbix" -e MYSQL_PASSWORD="xxx" -e ZBX_SERVER_HOST="172.17.0.3" -e PHP_TZ="Asia/Shanghai" -d zabbix/zabbix-web-nginx-mysql
 ```
+
+// 代理安装 /etc/rc.local 文件中加入 开机自启
+```
+# 开启 shadowsocks
+sudo docker run -d -p 8081:8081 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 8081 -k password -m aes-256-cfb
+```
