@@ -12,3 +12,5 @@ sudo docker run -d -p 1081:80 --name yoursave -it zhukangfeng/yoursave
 ```
 sudo docker attach 982177a902e8
 ```
+// 获取docker contaniner ip
+docker inspect --format='{{.NetworkSettings.IPAddress}}' $CONTAINER_ID
