@@ -29,7 +29,10 @@ docker run --name zabbix-server-mysql -e DB_SERVER_HOST="172.17.0.1" -e MYSQL_US
 docker run --name zabbix-agent -e ZBX_HOSTNAME="zabbix-agent" -e ZBX_SERVER_HOST="172.17.0.3" -d zabbix/zabbix-agent
 ```
 // web 用于界面显示（apache版）
+```
 docker run --name zabbix-web-apache-mysql -e DB_SERVER_HOST="172.17.0.1" -e MYSQL_USER="zabbix" -e MYSQL_PASSWORD="c95h4jfQWLDDDQ8j" -e ZBX_SERVER_HOST="172.17.0.3" -e PHP_TZ="Asia/Shanghai" -d zabbix/zabbix-web-apache-mysql -p 10080:80 -p 10443:443
-
+```
 // web 用于界面显示（nginx版）
+```
 docker run --name zabbix-web-nginx-mysql -e DB_SERVER_HOST="172.17.0.1" -e MYSQL_USER="zabbix" -e MYSQL_PASSWORD="c95h4jfQWLDDDQ8j" -e ZBX_SERVER_HOST="172.17.0.3" -e PHP_TZ="Asia/Shanghai" -d zabbix/zabbix-web-nginx-mysql -p 10080:80 -p 10443:443
+```
