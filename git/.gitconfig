@@ -1,0 +1,17 @@
+[user]
+	name = zhukangfeng
+	email = zhukangfeng@uco.com
+[core]
+	editor = vim
+[alias]
+	co = commit
+	br = branch
+	ci = commit
+    st = status
+    sta = stash
+	unsta = reset HEAD --
+	last = log -1 HEAD
+    ch = checkout
+    rebaseLast = rebase -i HEAD~2
+[push]
+	default = simple
