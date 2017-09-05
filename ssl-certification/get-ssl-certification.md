@@ -11,3 +11,22 @@
 
 ## 详细操作指南
 查看我的个人博客 [zhuk.tk](https://zhuk.tk/2016/07/11/create-ssl-certificate/)
+
+## 主要简单步骤：
+### 克隆certbot工程
+```
+git clone https://github.com/certbot/certbot.git
+```
+### 安装证书 
+```
+./certbot-auto --apache -d zhuk.tk
+```
+### 定时更新证书 
+```
+vim /etc/crontab
+```
+// 添加下面一行内容
+```
+# renew letsencrypt cert every month
+0       2       1       *       *       root    /path/to/certbot/certbot-auto renew --force-renew
+```
