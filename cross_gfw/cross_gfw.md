@@ -14,3 +14,6 @@
 * 下载本地ss客户端。这里采用了shadowsocks，可以在网上搜索，  
   或者在本工程文件中下载[shadowsocks](https://raw.githubusercontent.com/zhukangfeng/command-help/master/Shadowsocks.exe)。
   
+  
+  相关git
+  [against_gfw](https://github.com/zhukangfeng/against_gfw.git)
