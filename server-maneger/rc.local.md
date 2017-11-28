@@ -20,3 +20,7 @@ fcojean/l2tp-ipsec-vpn-server
 sudo docker run -p 8080:8080 -p 50000:50000 -v /var/jenkins_home/:/var/jenkins_home jenkins/jenkins &
 ````
 
+# ss-panel 开机启动
+````
+sudo docker run -d -p 10180:80 -p 10025:10025 -p 10026:10026 -p 10027:10027 -p 10028:10028 -p 10029:10029 -p 10030:10030 -p 10031:10031 -p 10032:10032 -p 10033:10033 -p 10034:10034 -p 10035:10035 maxidea/ss-panel
+````
