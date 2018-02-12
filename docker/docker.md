@@ -17,7 +17,20 @@ sudo docker attach 982177a902e8
 ```
 docker inspect --format='{{.NetworkSettings.IPAddress}}' $CONTAINER_ID
 ```
+// 进入容器也可以用 docker exec
+```
+docker exec -it xxxx
+```
 
+// docker开机自启动,使用--restart参数来设置：
+```
+docker run -m 1024m --memory-swap 1G -it -p 58080:8080 --restart=always   
+--name bvrfis --volumes-from logdata mytomcat:4.0 /root/run.sh  
+```
+// docker开机自启动，但是创建时未指定 --restart=always ,可通过update 命令设置
+```
+docker update --restart=always xxx
+```
 
 # 服务器监控zabbix安装
 // zabbix server 用于管理，所有被监控机都把数据发到这个主机
