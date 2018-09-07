@@ -17,8 +17,6 @@
     },
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
-    "window.zoomLevel": -1,
-    "workbench.iconTheme": "vscode-great-icons",
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": true,
     "editor.renderIndentGuides": true,
@@ -31,6 +29,8 @@
     "autoDocstring.docstringFormat": "google",
     "python.linting.flake8Args": [
         "--max-line-length=120"
-    ]
+    ],
+    "editor.fontSize": 12,
+    "editor.rulers": [80, 120]
 }
 ```
