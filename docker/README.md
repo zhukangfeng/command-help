@@ -9,3 +9,7 @@ docker rm $(docker ps -a | awk '{print $1}')
 ```
 docker rmi $(docker images | grep none | awk '{print $3}')
 ```
+### docker 进入container
+```
+docker exec -it docker-name bash
+```
