@@ -4,4 +4,4 @@
 `sudo snap  install microk8s --classic`
 
 ## get nodes
-microk8s.kubectl
+`microk8s.kubectl get nodes`
