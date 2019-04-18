@@ -12,3 +12,8 @@
 
 ## get nodes
 `microk8s.kubectl get nodes`
+
+## redeploy pods
+`
+kubectl replace --force -f deployment.yaml 
+`
