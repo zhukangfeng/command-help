@@ -17,3 +17,9 @@
   
   相关git
   [against_gfw](https://github.com/zhukangfeng/against_gfw.git)
+
+
+## 利用ssh隧道创建代理
+```sh
+ssh -qtfnN  -D 127.0.0.1:1080 root@server.url
+```
