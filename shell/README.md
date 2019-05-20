@@ -2,13 +2,14 @@
 <!-- TOC -->
 
 - [常用shell命令](#常用shell命令)
-    - [tar](#tar)
+    - [`tar`](#tar)
         - [压缩](#压缩)
         - [解压](#解压)
     - [文件指定行输出](#文件指定行输出)
-    - [ls,du 查看子文件数量、大小等](#lsdu-查看子文件数量大小等)
-        - [ls的用法](#ls的用法)
-    - [du的用法](#du的用法)
+    - [查看子文件数量大小等](#查看子文件数量大小等)
+        - [`ls`的用法](#ls的用法)
+        - [`du`的用法](#du的用法)
+    - [`scp` 的用法](#scp的用法)
 
 <!-- /TOC -->
 
@@ -30,8 +31,8 @@ tar -xzvf file.tar.gz
 nl file | sed -n -e 1 -e 2 -e 3 | | awk '{print $1,$5}
 ```
 
-## `ls`, `du` 查看子文件数量、大小等
-### `ls` 的用法
+## 查看子文件数量大小等
+### ls的用法
 `ls -l |grep "^-"|wc -l或find ./company -type f | wc -l`  查看某文件夹下文件的个数，包括子文件夹里的。
 
 `ls -lR|grep "^-"|wc -l`   查看某文件夹下文件夹的个数，包括子文件夹里的。
@@ -44,7 +45,7 @@ nl file | sed -n -e 1 -e 2 -e 3 | | awk '{print $1,$5}
 
           wc -l 统计输出信息的行数，因为已经过滤得只剩一般文件了，所以统计结果就是一般文件信息的行数，又由于一行信息对应一个文件，所以也就是文件的个数。 
 
-## `du` 的用法
+### du的用法
 `du` 命令用来查看目录或文件所占用磁盘空间的大小。常用选项组合为：du -sh
 
 `du` 常用的选项：  
@@ -62,7 +63,7 @@ nl file | sed -n -e 1 -e 2 -e 3 | | awk '{print $1,$5}
 `du -sh * | sort -n` 统计当前文件夹(目录)大小，并按文件大小排序  
 `du -sk filename` 查看指定文件大小  
 
-## `scp` 的用法
+## scp的用法
 利用 `scp` 上传文件夹
 `scp -P 22 -r  ./local/folder remote-url:/home/zhukangfeng/target/folder`
 
