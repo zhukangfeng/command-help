@@ -10,7 +10,9 @@
         - [`ls`的用法](#ls的用法)
         - [`du`的用法](#du的用法)
     - [`scp` 的用法](#scp的用法)
-
+    - [`rsync` 复制文件](#rsync复制文件)
+        - [ `rsync` 复制文件显示进度和速度](#rsync复制文件显示进度和速度)
+        - [`rsync` 通过 `ssh` 复制远程文件](#rsync通过ssh复制远程文件)
 <!-- /TOC -->
 
 ## tar用法
@@ -66,4 +68,11 @@ nl file | sed -n -e 1 -e 2 -e 3 | | awk '{print $1,$5}
 ## scp的用法
 利用 `scp` 上传文件夹
 `scp -P 22 -r  ./local/folder remote-url:/home/zhukangfeng/target/folder`
+
+## rsync复制文件
+利用 `rsync` 复制文件，并显示进度、速度等
+### rsync复制文件显示进度和速度
+`rsync --progress /path/to/source/file /path/to/target/file`
+### rsync通过ssh复制远程文件
+`rsync --progress -e ssh -p 32200 username@remote.server.ip:/home/username/path/to/file ./local/path`
 
