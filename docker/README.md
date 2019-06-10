@@ -21,3 +21,8 @@ docker rmi $(docker images | grep none | awk '{print $3}')
 ```
 docker exec -it docker-name bash
 ```
+
+### 获取 docker container 最近日志
+```
+docker logs -f --tail 10 container_name
+```
