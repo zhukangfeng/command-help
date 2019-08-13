@@ -1,4 +1,14 @@
 # config mysql
+## ubuntu/debian first login
+get password and username from file
+```shell
+cat /etc/mysql/debian.cnf
+```
+## add root password
+```mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+
 ## add user
 ```mysql
 CREATE USER 'user'@'%' IDENTIFIED BY 'pass';
