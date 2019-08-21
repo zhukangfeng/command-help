@@ -1,6 +1,8 @@
 # Vim 代码编辑插件
-## vimogen 安装发难
-安装指南: [vimogen](./vim)
+
+## Vimogen 安装发难
+详细参考安装指南: [Vimogen](./vim)
+
 ## Vundle 安装方案
 ### 插件管理 Vundle
 安装指南：[Vundle](https://github.com/VundleVim/Vundle.vim)
