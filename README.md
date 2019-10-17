@@ -23,4 +23,4 @@ Some useful command of managing docker.
 
 # Connect me
 you can write issues on this project  
-or connect me in my personal blog *[zhuk.tk](https://zhuk.tk)*
+or connect me in my personal blog *[zhukangfeng.com](https://zhukangfeng.com/)*
