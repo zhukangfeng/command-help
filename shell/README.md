@@ -16,6 +16,7 @@
         - [ `rsync` 复制文件显示进度和速度](#rsync复制文件显示进度和速度)
         - [`rsync` 通过 `ssh` 复制远程文件](#rsync通过ssh复制远程文件)
     - [统计关键词所在行数量](#统计关键词所在行数量)
+        - [按时间统计日志行数量](#按时间统计日志行数量)
 <!-- /TOC -->
 
 ## tar用法
@@ -86,3 +87,13 @@ nl file | sed -n -e 1 -e 2 -e 3 | | awk '{print $1,$5}
 ## 统计关键词所在行数量
 比如统计 10 月份日志行数
 `find . -type f -name "*.log" -print0 | xargs -0 cat | grep '\[2019-10-' | wc -l`
+### 按时间统计日志行数量
+```sh
+d=2019-09-01
+
+while [ "$d" != 2019-10-22 ]; do
+	echo $d
+	d=$(date -I -d "$d + 1 day")
+	find /path/to/logs -type f -name "*.log" -print0 | xargs -0 cat | grep $d | wc -l
+done
+```
