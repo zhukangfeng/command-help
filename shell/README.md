@@ -15,6 +15,7 @@
     - [`rsync` 复制文件](#rsync复制文件)
         - [ `rsync` 复制文件显示进度和速度](#rsync复制文件显示进度和速度)
         - [`rsync` 通过 `ssh` 复制远程文件](#rsync通过ssh复制远程文件)
+    - [统计关键词所在行数量](#统计关键词所在行数量)
 <!-- /TOC -->
 
 ## tar用法
@@ -82,3 +83,6 @@ nl file | sed -n -e 1 -e 2 -e 3 | | awk '{print $1,$5}
 ### rsync通过ssh复制远程文件
 `rsync --progress -e ssh -p 32200 username@remote.server.ip:/home/username/path/to/file ./local/path`
 
+## 统计关键词所在行数量
+比如统计 10 月份日志行数
+`find . -type f -name "*.log" -print0 | xargs -0 cat | grep '\[2019-10-' | wc -l`
