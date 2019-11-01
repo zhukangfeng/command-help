@@ -17,6 +17,7 @@
         - [`rsync` 通过 `ssh` 复制远程文件](#rsync通过ssh复制远程文件)
     - [统计关键词所在行数量](#统计关键词所在行数量)
         - [按时间统计日志行数量](#按时间统计日志行数量)
+    - [其他常用命令](#其他常用命令）
 <!-- /TOC -->
 
 ## tar用法
@@ -96,4 +97,9 @@ while [ "$d" != 2019-10-22 ]; do
 	d=$(date -I -d "$d + 1 day")
 	find /path/to/logs -type f -name "*.log" -print0 | xargs -0 cat | grep $d | wc -l
 done
+```
+## 其他常用命令
+```shell
+# 停止特定进程
+ps -aux | grep '[p]ython3 rpc-client.py' | awk '{print $2}' | xargs kill
 ```
