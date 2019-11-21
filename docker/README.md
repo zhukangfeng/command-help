@@ -11,7 +11,7 @@
 ## 常用命令
 ### 删除关闭了的container
 ```
-docker rm $(docker ps -a | awk '{print $1}')
+docker rm $(docker ps -aq)
 ```
 ### 删除无用的image
 ```
