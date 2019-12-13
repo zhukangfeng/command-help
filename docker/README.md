@@ -1,5 +1,6 @@
 # docker 学习记录以及相关操作命令记录
 <!-- TOC -->
+- [docker 安装](#docker-安装)
 
 - [docker 学习记录以及相关操作命令记录](#docker-学习记录以及相关操作命令记录)
     - [常用命令](#常用命令)
@@ -10,6 +11,38 @@
         - [将container持久化为image](#将container持久化为image)
 
 <!-- /TOC -->
+## docker 安装
+[https://docs.docker.com/install/](https://docs.docker.com/install/)
+### ubuntu
+[https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+```shell
+# remove old version
+sudo apt-get remove docker docker-engine docker.io containerd runc
+# update repostory
+sudo apt-get update
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+# GPG key checking
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+
+# add x86_64/amd64 install repository
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+# install engine-community
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+# check install status
+sudo docker run hello-world
+
+```
 ## 常用命令
 ### 删除关闭了的container
 ```
