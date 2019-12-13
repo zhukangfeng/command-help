@@ -1,7 +1,7 @@
 # docker 学习记录以及相关操作命令记录
 <!-- TOC -->
 - [docker 安装](#docker-安装)
-
+- [docker-compose 安装](#docker-compose-安装]
 - [docker 学习记录以及相关操作命令记录](#docker-学习记录以及相关操作命令记录)
     - [常用命令](#常用命令)
         - [删除关闭了的container](#删除关闭了的container)
@@ -20,7 +20,7 @@
 sudo apt-get remove docker docker-engine docker.io containerd runc
 # update repostory
 sudo apt-get update
-sudo apt-get install \
+sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -37,12 +37,22 @@ sudo add-apt-repository \
    stable"
 # install engine-community
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
 # check install status
 sudo docker run hello-world
 
 ```
+## docker-compose 安装
+[https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
+```shell
+# linux
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+```
+
 ## 常用命令
 ### 删除关闭了的container
 ```
