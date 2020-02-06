@@ -25,3 +25,15 @@ ssh -qtfnN  -D 127.0.0.1:1080 root@server.url
 ```
 ## Trojan
 https://www.atrandys.com/2019/1963.html
+
+## ssh server
+## 安装 Trojan
+```sh
+curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh && chmod +x trojan_mult.sh && ./trojan_mult.sh
+```
+需要输入对应域名
+
+## 安装bbr加速
+```sh
+cd /usr/src && wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+```
