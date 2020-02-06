@@ -26,14 +26,18 @@ ssh -qtfnN  -D 127.0.0.1:1080 root@server.url
 ## Trojan
 https://www.atrandys.com/2019/1963.html
 
-## ssh server
-## 安装 Trojan
+### ssh server
+### 安装 Trojan
 ```sh
 curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh && chmod +x trojan_mult.sh && ./trojan_mult.sh
 ```
 需要输入对应域名
 
-## 安装bbr加速
+### 安装bbr加速
 ```sh
 cd /usr/src && wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ```
+### trojan服务端怎么修改密码
+- trojan服务端配置文件路径`/usr/src/trojan/server.conf`，如需修改内容，修改以下文件即可。
+- 修改完成后，重启trojan服务端`systemctl restart trojan`即可，同时客户端的密码也要同步修改哦。
+
