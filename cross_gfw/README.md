@@ -41,3 +41,12 @@ cd /usr/src && wget -N --no-check-certificate "https://raw.githubusercontent.com
 - trojan服务端配置文件路径`/usr/src/trojan/server.conf`，如需修改内容，修改以下文件即可。
 - 修改完成后，重启trojan服务端`systemctl restart trojan`即可，同时客户端的密码也要同步修改哦。
 
+## v2ray
+### install
+```sh
+bash <(curl -L -s https://install.direct/go.sh)
+``
+### auto start
+```sh
+systemctl enable v2ray
+```
