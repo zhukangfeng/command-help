@@ -24,7 +24,8 @@
 ssh -qtfnN  -D 127.0.0.1:1080 root@server.url
 ```
 ## Trojan
-https://www.atrandys.com/2019/1963.html
+- https://github.com/trojan-gfw/trojan/releases
+- https://www.atrandys.com/2019/1963.html
 
 ### ssh server
 ### 安装 Trojan
