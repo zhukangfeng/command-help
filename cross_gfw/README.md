@@ -41,6 +41,8 @@ cd /usr/src && wget -N --no-check-certificate "https://raw.githubusercontent.com
 ### trojan服务端怎么修改密码
 - trojan服务端配置文件路径 `/usr/src/trojan/server.conf` ，如需修改内容，修改以下文件即可。
 - 修改完成后，重启trojan服务端 `systemctl restart trojan` 即可，同时客户端的密码也要同步修改哦。
+### 客户端下载
+- [trojan official site](https://github.com/trojan-gfw/trojan/releases)
 
 ## v2ray
 ### install
