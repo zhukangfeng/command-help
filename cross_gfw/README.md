@@ -43,6 +43,7 @@ cd /usr/src && wget -N --no-check-certificate "https://raw.githubusercontent.com
 - 修改完成后，重启trojan服务端 `systemctl restart trojan` 即可，同时客户端的密码也要同步修改哦。
 ### 客户端下载
 - [trojan official site](https://github.com/trojan-gfw/trojan/releases)
+- [trojan mac app site](https://github.com/JimLee1996/TrojanX)
 
 ## v2ray
 ### install
