@@ -28,6 +28,10 @@ ssh -qtfnN  -D 127.0.0.1:1080 root@server.url
 - https://www.atrandys.com/2019/1963.html
 
 ### ssh server
+### 进入 root
+``` sh
+sudo su
+```
 ### 安装 Trojan
 ```sh
 curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh && chmod +x trojan_mult.sh && ./trojan_mult.sh
