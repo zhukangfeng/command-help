@@ -7,7 +7,7 @@
 这里就介绍一下如何使用sockt实现“翻墙”功能。  
 
 ## 多方式安装
-[proxysu](https://github.com/proxysu/windows)
+多种代理快速安装：[proxysu](https://github.com/proxysu/windows)
 
 ## 实现原理
 通过连接远程linux服务器的ss服务，实现本地浏览器“翻墙”。  
