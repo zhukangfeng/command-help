@@ -7,6 +7,7 @@
     - [常用命令](#常用命令)
         - [删除关闭了的container](#删除关闭了的container)
         - [删除无用的image](#删除无用的image)
+        - [删除无用的挂在卷](#删除无用的挂在卷)
         - [docker进入container](#docker进入container)
         - [获取container最近日志](#获取container最近日志)
         - [将container持久化为image](#将container持久化为image)
@@ -63,24 +64,28 @@ sudo usermod -aG docker $USER
 
 ## 常用命令
 ### 删除关闭了的container
-```
+```shell
 docker rm $(docker ps -aq)
 ```
 ### 删除无用的image
-```
+```shell
 docker rmi $(docker images | grep none | awk '{print $3}')
 ```
-### docker进入container
+### 删除无用的挂在卷
+```shell
+docker volume rm -f $(docker volume ls -f "dangling=true")
 ```
+### docker进入container
+```shell
 docker exec -it docker-name bash
 ```
 
 ### 获取container最近日志
-```
+```shell
 docker logs -f --tail 10 container_name
 ```
 ### 将container持久化为image
-```
+```shell
 docker commit container_id
 docker tag image_id image_name
 ```
