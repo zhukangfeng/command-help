@@ -26,6 +26,13 @@
 ```sh
 ssh -qtfnN  -D 127.0.0.1:1080 root@server.url
 ```
+
+## 多用户docker安装Trojan
+```shell
+docker run --name trojan-mariadb --restart=always -p 3306:3306 -v /home/mariadb:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=trojan -e MYSQL_ROOT_HOST=% -e MYSQL_DATABASE=trojan -d mariadb:10.2
+docker run -it -d --name trojan --net=host --restart=always --privileged jrohy/trojan init
+```
+
 ## Trojan
 - https://github.com/trojan-gfw/trojan/releases
 - https://www.atrandys.com/2019/1963.html
