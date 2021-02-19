@@ -28,10 +28,42 @@ ssh -qtfnN  -D 127.0.0.1:1080 root@server.url
 ```
 
 ## 多用户docker安装Trojan
+### 按照命令
 ```shell
 docker run --name trojan-mariadb --restart=always -p 3306:3306 -v /home/mariadb:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=trojan -e MYSQL_ROOT_HOST=% -e MYSQL_DATABASE=trojan -d mariadb:10.2
 docker run -it -d --name trojan --net=host --restart=always --privileged jrohy/trojan init
 ```
+### 命令行
+```
+Usage:
+  trojan [flags]
+  trojan [command]
+
+Available Commands:
+  add           添加用户
+  clean         清空指定用户流量
+  completion    自动命令补全(支持bash和zsh)
+  del           删除用户
+  help          Help about any command
+  info          用户信息列表
+  log           查看trojan日志
+  restart       重启trojan
+  start         启动trojan
+  status        查看trojan状态
+  stop          停止trojan
+  tls           证书安装
+  update        更新trojan
+  updateWeb     更新trojan管理程序
+  version       显示版本号
+  import [path] 导入sql文件
+  export [path] 导出sql文件
+  web           以web方式启动
+
+Flags:
+  -h, --help   help for trojan
+```
+### 其他帮助
+[Jrohy/trojan](https://github.com/Jrohy/trojan)
 
 ## Trojan
 - https://github.com/trojan-gfw/trojan/releases
