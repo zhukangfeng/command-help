@@ -60,6 +60,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo groupadd docker
 # Add your user to the docker group.
 sudo usermod -aG docker $USER
+sudo chmod 666 /var/run/docker.sock
 ```
 
 ## 常用命令
