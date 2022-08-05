@@ -1,4 +1,11 @@
 # config mysql
+## install mariadb in ubuntu/debian
+### install
+- `sudo apt update`
+- `sudo apt instal mariadb-server
+### update root password
+- `sudo mysql_secure_installation`
+
 ## ubuntu/debian first login
 - username: `debian-sys-maint`
 - password: show in file
