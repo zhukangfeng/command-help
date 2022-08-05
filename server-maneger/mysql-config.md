@@ -5,6 +5,9 @@
 - `sudo apt instal mariadb-server
 ### update root password
 - `sudo mysql_secure_installation`
+### enable remote access
+- `sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf`, change bind-address from `127.0.0.1` to `0.0.0.0`
+- `sudo service mariadb restart` restart mysql
 
 ## ubuntu/debian first login
 - username: `debian-sys-maint`
