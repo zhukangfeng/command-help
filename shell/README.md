@@ -24,7 +24,7 @@
 ### 压缩
 ```
  tar -cvf file.tar ./file
- tar –czf file.tar.gz ./file
+ tar -czf file.tar.gz ./file
 ```
 ### 解压
 ```
