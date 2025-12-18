@@ -90,3 +90,18 @@ docker logs -f --tail 10 container_name
 docker commit container_id
 docker tag image_id image_name
 ```
+
+## docker 配置
+如果需要通过代理下载 docker image，可以参考：
+```json
+{
+    "insecure-registries": [
+        "registry-1.docker.io"
+    ],
+    "proxies": {
+        "http-proxy": "socks5://127.0.0.1:1080",
+        "no-proxy": "127.0.0.1,localhost,reg.docker.alibaba-inc.com",
+        "https-proxy": "socks5://127.0.0.1:1080"
+    }
+}
+```
