@@ -5,6 +5,9 @@
 很多时候github也无法正常访问，所以“翻墙”技术对于软件开发者来说，  
 是一门非常必须的技能。如果都不会“翻墙”，都不好意思说自己是搞计算机相关工作的。  
 这里就介绍一下如何使用sockt实现“翻墙”功能。  
+- 代理软件 [clash verge rev](https://github.com/clash-verge-rev/clash-verge-rev)
+- - [本地配置代理 rule](https://github.com/Loyalsoldier/clash-rules)
+
 
 ## 多方式安装
 多种代理快速安装：[proxysu](https://github.com/proxysu/windows)
