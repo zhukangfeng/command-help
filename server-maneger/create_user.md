@@ -11,3 +11,7 @@ sudo adduser username
 ```shell
 sudo usermod -aG sudo username
 ```
+## change user to username
+```shell
+su - mufeng
+```
